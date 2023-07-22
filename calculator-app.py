@@ -1,16 +1,16 @@
-num1 = int(input('Enter first number:'))
-num2 = int(input('Enter second number:'))
-op = input('Enter operator:')
-if op == '+':
-    print("The addition is",num1+num2)
-elif op == '-':
-    print("The subtraction is",num1-num2)
-elif op == '*':
-    print("The multiplication is",num1*num2)
-elif op == '/':
-    print("The division is",num1/num2)
-else:
-    print("The Invalid Operator")
 
+class myClass:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+# Ask the user for input
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
 
+# Creating an instance of the myClass
+p1 = myClass(name, age)
+
+# Now you can use the p1 object to access the attributes of the myClass instance:
+print(f"Name: {p1.name}")
+print(f"Age: {p1.age}")
